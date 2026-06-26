@@ -106,8 +106,6 @@ data = dataset[0]
 # data.force      [N, 3]            力标签
 ```
 
-![架构图](architecture.png)
-
 ---
 
 ## SimpleMPNN：入门级消息传递网络
