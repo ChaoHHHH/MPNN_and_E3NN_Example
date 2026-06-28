@@ -199,8 +199,6 @@ Test prediction:
   Error:            0.0431
 ```
 
-Loss 从 80 万降到 7，测试集能量误差 0.04 eV。
-
 ---
 
 ## E3Model：等变图神经网络
@@ -316,7 +314,7 @@ python E3train.py
 ```
 Device: cuda
 Train: 24, Test: 1
-Model params: 21,080
+Model params: ...
 Epoch    1  Loss: ...
 Epoch  100  Loss: ...
 ...
@@ -339,15 +337,6 @@ Test result:
 | 预测 | 仅能量 | 能量 + 受力 |
 
 ---
-
-## 结果对比
-
-| 网络 | 参数量 | 能量误差 (eV) | 训练时间/300 epoch |
-|------|--------|---------------|-------------------|
-| SimpleMPNN | 95,681 | ~0.05 | 快 |
-| E3Model | 21,080 | ~0.04 | 较慢（张量积计算重） |
-
-E3Model 用更少的参数达到了相当的精度，同时还能预测受力。
 
 ---
 
